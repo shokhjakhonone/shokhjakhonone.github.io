@@ -1,0 +1,17 @@
+@import "./reset.css";
+@import "./fonts.css";
+
+
+
+@import "./header.css";
+@import "./inner.css";
+
+@import "./projects.css";
+
+@import "./projectDetail.css";
+
+@import "./footer.css";
+
+@import "./default.css";
+@import "./skills.css";
+@import "./contacts.css";

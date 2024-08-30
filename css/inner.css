@@ -1,0 +1,121 @@
+.inner {
+    background-color: var(--dark-bg);
+    color: var(--white-text);
+    min-height: 695px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url("../images/inner-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.inner__wrap {
+    max-width: 660px;
+    padding: 0 15px;
+}
+
+.inner__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.4;
+    color: #fafafa;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+.title__name {
+    color: var(--accent)
+}
+
+.title__info {
+    font-size: 40px;
+}
+
+.inner__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.inner__text-decr {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--white-text);
+}
+
+.inner__button {
+    display: inline-block;
+    padding: 12px 28px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--white-text);
+    background-color: var(--accent);
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in;
+}
+
+.inner__button:hover {
+    background-color: #1b23cf;
+}
+
+.inner__button:active {
+    background-color: var(--accent);
+    position: relative;
+    top: 1px;
+}
+
+@media(max-width: 764px) {
+    .inner {
+        min-height: 640px;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .inner {
+        min-height: 470px;
+        background-size: contain;
+    }
+
+    .inner__title {
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 320px) {
+    .inner {
+        min-height: auto;
+    }
+
+    .inner__title {
+        font-size: 28px;
+    }
+
+    .title__info {
+        font-size: 18px;
+    }
+
+    .inner__text {
+        margin-bottom: 20px;
+    }
+
+    .inner__text-decr {
+        font-size: 14px;
+
+    }
+
+    .inner__button{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

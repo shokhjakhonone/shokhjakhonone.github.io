@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            background: #0e0e1b; /* Dark background for contrast */
+            font-family: 'Roboto', sans-serif; /* Futuristic font */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the top for scrolling */
+            min-height: 100vh; /* Full viewport height */
+            overflow-y: auto; /* Enable vertical scrolling */
+            position: relative; /* For absolute positioning of particles */
+            animation: backgroundAnimation 30s infinite alternate; /* Background animation */
+        }
+
+        /* Background animation */
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #0e0e1b;
+            }
+            50% {
+                background-color: #1a1a33; /* Lighter shade for effect */
+            }
+            100% {
+                background-color: #0e0e1b;
+            }
+        }
+
+        /* Particle effect */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 6s infinite;
+        }
+
+        /* Floating animation for particles */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Title styling */
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon glow */
+            margin: 30px 0; /* Margin from the top and bottom */
+            animation: fadeIn 2s ease; /* Fade-in effect for the title */
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Certificate styling */
+        .certificate {
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(25, 25, 25, 0.8); /* Dark background */
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 255, 255, 0.6); /* Neon shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        /* Certificate image styling */
+        .certificate img {
+            width: 80%; 
+            max-width: 220px; 
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s ease; /* Animation for image */
+        }
+
+        /* Certificate text styling */
+        .certificate p {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Neon glow */
+        }
+
+        /* Hover effects for certificates */
+        .certificate:hover {
+            transform: translateY(-10px); /* Lift effect */
+            box-shadow: 0 8px 30px rgba(0, 255, 255, 0.9); /* Enhanced shadow on hover */
+        }
+
+        .certificate:hover img {
+            transform: scale(1.1); /* Slightly enlarge image on hover */
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.9); /* Fallback background color */
+        }
+
+        .modal-content {
+            margin: 15% auto; /* 15% from the top and centered */
+            display: block;
+            width: 80%; /* Could be more or less, depending on screen size */
+            max-width: 700px; /* Max width for large screens */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Close button styles */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px; /* Adjusted title size for smaller screens */
+            }
+
+            .certificate {
+                padding: 20px; /* Reduced padding */
+            }
+
+            .certificate p {
+                font-size: 18px; /* Adjusted text size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Certificates</h1>
+
+    <div class="certificate" onclick="openModal('cert/1.png')">
+        <img src="cert/1.png" alt="Сертификат 1"> <!-- Make sure this path is correct -->
+        
+    </div>
+
+    <div class="certificate" onclick="openModal('cert/2.png')">
+        <img src="cert/2.png" alt="Сертификат 1"> <!-- Make sure this path is correct -->
+        
+    </div>
+    
+    <div class="certificate" onclick="openModal('cert/3.jpeg')">
+        <img src="cert/3.jpeg" alt="Сертификат 1"> <!-- Make sure this path is correct -->
+        
+    </div>
+    
+    <div class="certificate" onclick="openModal('cert/4.jpeg')">
+        <img src="cert/4.jpeg" alt="Сертификат 1"> <!-- Make sure this path is correct -->
+       
+    </div>
+
+    <!-- Modal for full-size image -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Particle effect generation -->
+    <script>
+        for (let i = 0; i < 100; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            const size = Math.random() * 5 + 5; // Random size between 5px and 10px
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+            particle.style.top = Math.random() * 100 + 'vh'; // Random vertical position
+            particle.style.animationDuration = Math.random() * 5 + 3 + 's'; // Random float duration
+            document.body.appendChild(particle);
+        }
+
+        // Open modal function
+        function openModal(imageSrc) {
+            const modal = document.getElementById("myModal");
+            const modalImage = document.getElementById("modalImage");
+            modal.style.display = "block"; // Show modal
+            modalImage.src = imageSrc; // Set the source of the modal image
+        }
+
+        // Close modal function
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Hide modal
+        }
+
+        // Close modal when clicking outside of the image
+        window.onclick = function(event) {
+            const modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none"; // Hide modal
+            }
+        }
+    </script>
+</body>
+</html>

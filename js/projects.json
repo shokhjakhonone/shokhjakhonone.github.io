@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"name": "RNN chat-bot system",
+		"imgSrc": "./images/projects/image1.jpg",
+		"skills": "Python, tensorflow, keras, nltk, flask, numpy, sklearn, RNN",
+		"gitHubRepo": "https://github.com/shokhjakhonone/RNN-CHATBOT",
+		"gitHubPage": "https://github.com/shokhjakhonone/RNN-CHATBOT"
+	},
+	{
+		"id": 2,
+		"name": "chat-bot llm for legaltech",
+		"imgSrc": "./images/projects/image2.jpeg",
+		"skills": "Python, transformers, Pytorch, Flask,LLM, NLP, LLama2, Google coolab, jupyter Notebook",
+		"gitHubRepo": "https://github.com/shokhjakhonone/chat-KONI-LLM",
+		"gitHubPage": "https://github.com/shokhjakhonone/chat-KONI-LLM"
+	},
+	{
+		"id": 3,
+		"name": "Crypto-BOT",
+		"imgSrc": "./images/projects/image7.jpg",
+		"skills": "Python, sklearn, numpy, matplotlib, xgboost, telebot, pandas, langchain, openAI, glm-4",
+		"gitHubRepo": "https://github.com/shokhjakhonone/crypto_bot",
+		"gitHubPage": "https://github.com/shokhjakhonone/crypto_bot"
+	},
+	{
+		"id": 4,
+		"name": "FinTech",
+		"imgSrc": "./images/projects/image9.png",
+		"skills": "Python, yfinance, plotly, flask, pandas, base64, CSS, HTML, JavaScript",
+		"gitHubRepo": "https://github.com/shokhjakhonone/fin-tech",
+		"gitHubPage": "https://github.com/shokhjakhonone/fin-tech"
+	}
+]

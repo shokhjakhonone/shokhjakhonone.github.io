@@ -41,6 +41,14 @@
 	},
 	{
 		"id": 6,
+		"name": "digital Ruble",
+		"imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.v1Dr8yGCfyQXp-Gl1ef8PQHaE4%26pid%3DApi&f=1&ipt=eb2fb4a09fd31e227cbffe02b4b4df40cd9af0b5e2d73b5fdd5fda6858fc0edf&ipo=images",
+		"skills": "Python, hashlib, cryptography",
+		"gitHubRepo": "https://github.com/shokhjakhonone/digital-Ruble/blob/main/README.md",
+		"gitHubPage": "https://github.com/shokhjakhonone/digital-Ruble/blob/main/README.md"
+	},
+	{
+		"id": 7,
 		"name": "Movie Recommendation System",
 		"imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.analyticsvidhya.com%2Fwp-content%2Fuploads%2F2020%2F11%2F75825featured2.png&f=1&nofb=1&ipt=95ea766d26527031108474f0b6f1d6a7e7f87c37a50fbed5aaa1ba96293827a0&ipo=images",
 		"skills": "Python,  PyTorch, pandas, Flask, streamlit",

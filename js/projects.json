@@ -25,6 +25,14 @@
 	},
 	{
 		"id": 4,
+		"name": "Record Linkage",
+		"imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frepository-images.githubusercontent.com%2F44471657%2F4c57e7c6-c435-4ca3-b154-ae430a47b09f&f=1&nofb=1&ipt=796957d5c1c2f9f7f33890f52ac33cac861d7448bf2fac434e1d903e07b428bc&ipo=images",
+		"skills": "Python, sklearn, numpy, matplotlib, fuzzywuzzy, pandas",
+		"gitHubRepo": "https://github.com/shokhjakhonone/Record_Linkage",
+		"gitHubPage": "https://github.com/shokhjakhonone/Record_Linkage"
+	},
+	{
+		"id": 5,
 		"name": "FinTech",
 		"imgSrc": "./images/projects/image9.png",
 		"skills": "Python, yfinance, plotly, flask, pandas, base64, CSS, HTML, JavaScript",

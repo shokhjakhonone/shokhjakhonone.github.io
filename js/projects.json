@@ -54,5 +54,13 @@
 		"skills": "Python,  PyTorch, pandas, Flask, streamlit",
 		"gitHubRepo": "https://github.com/shokhjakhonone/MovieRecommendationSystem/tree/main",
 		"gitHubPage": "https://github.com/shokhjakhonone/MovieRecommendationSystem/tree/main"
+	},
+	{
+		"id": 8,
+		"name": "Hippocampus GEN model",
+		"imgSrc": "https://content.altexsoft.com/media/2022/10/gan-architecture.png",
+		"skills": "Python,  PyTorch, torchvision, PIL, fastapi, uvicorn",
+		"gitHubRepo": "https://github.com/shokhjakhonone/GAN.git",
+		"gitHubPage": "https://github.com/shokhjakhonone/GAN.git"
 	}
 ]

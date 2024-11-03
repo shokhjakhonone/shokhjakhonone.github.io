@@ -62,5 +62,13 @@
 		"skills": "Python,  PyTorch, torchvision, PIL, fastapi, uvicorn",
 		"gitHubRepo": "https://github.com/shokhjakhonone/GAN.git",
 		"gitHubPage": "https://github.com/shokhjakhonone/GAN.git"
+	},
+	{
+		"id": 9,
+		"name": "Основано на диссертации: Анализ поведения студентов в электронных образовательных системах",
+		"imgSrc": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1400%2F1*gFYWIpNETvxjYMKBXTh0Qw.jpeg&f=1&nofb=1&ipt=0965719295c9b03a479c7cda26c35fe52f56dd3642a9742dabf7b673bd88bd65&ipo=images",
+		"skills": "Python,  flask, pandas, scikit-learn, matplotlib, seaborn",
+		"gitHubRepo": "https://github.com/shokhjakhonone/Roziboy_dis.git",
+		"gitHubPage": "https://github.com/shokhjakhonone/Roziboy_dis.git"
 	}
 ]
